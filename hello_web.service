@@ -1,0 +1,13 @@
+[Unit]
+Description=service to start node, restart if fail
+After=network-online.target
+
+[Service]
+User=benny
+Group=benny
+Type=notify
+ExecStart=/home/benny/.volta/bin/node /home/benny/2420-assign-two/src/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
