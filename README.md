@@ -47,18 +47,18 @@ You will be doing this on both droplets so make sure you repeat these steps agai
 
 ## Writing the Web App
 
-We will create two new directories, one called html and one called src. Inside the html directory, we will create a html file named index.html. This is what I have used for the index.html. This index.html will be used in both of your droplets.
+We will create two new directories, one called html and one called src. Inside the html directory, we will create a html file named index.html. This is what I have used for the index.html. This index.html will be used in both of your droplets. Ensure that your html file on each droplet is different from each other so that you can differentiate between the two when testing if the load balancer is working or not.
 
 ```
     <!DOCTYPE html>
     <html>
     <head>
-    <title>Page Title</title>
+    <title>Droplet 1</title>
     </head>
     <body>
 
     <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+    <p>Droplet 1.</p>
 
     </body>
     </html>
